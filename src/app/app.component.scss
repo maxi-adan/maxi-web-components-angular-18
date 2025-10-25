@@ -283,7 +283,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .nav-title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -309,6 +308,16 @@
   display: flex;
   align-items: flex-start;
   min-height: 60px;
+}
+
+/* Cascade Menu al 100% del ancho */
+.cascade-menu-section .nav-demo {
+  width: 100%;
+}
+
+.cascade-menu-section .nav-demo * {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Paginator Section */
@@ -339,7 +348,6 @@
 .action-item:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .action-title {
   font-size: 1.2rem;
@@ -416,7 +424,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .display-title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -443,6 +450,22 @@
   justify-content: center;
   align-items: center;
   min-height: 120px;
+}
+
+/* Accordion al 100% del ancho */
+.accordion-section {
+  grid-column: 1 / -1;
+  background: white;
+}
+
+.accordion-section .display-demo {
+  width: 100%;
+  display: block;
+}
+
+.accordion-section .display-demo * {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Data Table Section */
@@ -488,7 +511,6 @@
 .feedback-item:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .feedback-title {
   font-size: 1.2rem;
@@ -537,7 +559,6 @@
 .state-item:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .state-title {
   font-size: 1.2rem;
