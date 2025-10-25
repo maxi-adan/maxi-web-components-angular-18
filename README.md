@@ -38,6 +38,8 @@ The project includes examples of the following components:
 - 💬 **Dialog** - Modal dialogs and popups
 - 🎨 **Chips** - Tag and chip components
 - 📑 **Tabs** - Tabbed navigation
+- 📋 **Accordion** - Collapsible content sections
+- 🍔 **Cascade Menu** - Hierarchical dropdown menu
 - ⏱️ **Timeline** - Timeline visualization
 - 📄 **Paginator** - Pagination controls
 - 🔍 **Autocomplete** - Search with suggestions
@@ -141,7 +143,7 @@ export class ExampleComponent {
 
 ### Main Dependencies
 - **@angular/core**: ^18.2.0
-- **maxi-angular-components**: ^4.0.10
+- **maxi-angular-components**: ^4.0.12
 - **rxjs**: ~7.8.0
 
 ### Dev Dependencies
