@@ -50,6 +50,7 @@ The project includes examples of the following components:
 - ⚡ **Spinner** - Loading indicators
 - ⚙️ **Preload** - Content preloading
 - 💡 **Tooltip** - Contextual tooltips
+- 🔐 **InputOTP** - One-Time Password verification 
 
 ## 🚀 Getting Started
 
@@ -143,7 +144,7 @@ export class ExampleComponent {
 
 ### Main Dependencies
 - **@angular/core**: ^18.2.0
-- **maxi-angular-components**: ^4.0.12
+- **maxi-angular-components**: ^4.0.13
 - **rxjs**: ~7.8.0
 
 ### Dev Dependencies
