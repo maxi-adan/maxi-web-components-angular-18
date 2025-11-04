@@ -31,8 +31,8 @@
             ],
             "styles": ["src/styles.scss", "maxi-web-components/global.css"],
             "scripts": [],
-            "baseHref": "/",
-            "deployUrl": "/"
+            "baseHref": "./",
+            "deployUrl": "./"
           },
           "configurations": {
             "production": {
