@@ -40,6 +40,7 @@ The project includes examples of the following components:
 - 📑 **Tabs** - Tabbed navigation
 - 📋 **Accordion** - Collapsible content sections
 - 🍔 **Cascade Menu** - Hierarchical dropdown menu
+- 📊 **Menubar** - Horizontal navigation menu with dropdowns
 - ⏱️ **Timeline** - Timeline visualization
 - 📄 **Paginator** - Pagination controls
 - 🔍 **Autocomplete** - Search with suggestions
