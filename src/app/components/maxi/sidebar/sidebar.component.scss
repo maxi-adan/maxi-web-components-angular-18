@@ -6,7 +6,7 @@
 
 ms-sidebar {
   ::ng-deep [slot="content"] {
-    padding: 2rem;
+    padding: 2rem 1rem;
     margin-left: 0.5rem;
   }
 
@@ -51,7 +51,6 @@ ms-sidebar {
     display: inline-block;
   }
 
-  /* Aplicar margen directamente al div del slot content */
   ::ng-deep div[slot="content"] {
     margin-left: 0.5rem !important;
   }
