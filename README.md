@@ -145,7 +145,7 @@ export class ExampleComponent {
 
 ### Main Dependencies
 - **@angular/core**: ^18.2.0
-- **maxi-angular-components**: ^4.0.13
+- **maxi-angular-components**: ^5.0.1
 - **rxjs**: ~7.8.0
 
 ### Dev Dependencies
