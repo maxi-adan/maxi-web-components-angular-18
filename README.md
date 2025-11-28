@@ -164,6 +164,6 @@ This is a test project. For contributions to the main library, please refer to t
 ---
 
 <div align="center">
-  Made with ❤️ using Angular and Maxi Web Components
+  Made with ❤️ using Angular and Maxi Angular Components
 </div>
 
