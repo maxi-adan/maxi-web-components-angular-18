@@ -28,7 +28,7 @@ import { AccordionComponent } from './components/maxi/accordion/accordion.compon
 import { CascadeMenuComponent } from './components/maxi/cascade-menu/cascade-menu.component';
 import { InputOtpComponent } from './components/maxi/input-otp/input-otp.component';
 import { MenubarComponent } from './components/maxi/menubar/menubar.component';
-
+import { CarouselComponent } from './components/maxi/carousel/carousel.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -62,6 +62,7 @@ import { MenubarComponent } from './components/maxi/menubar/menubar.component';
     CascadeMenuComponent,
     InputOtpComponent,
     MenubarComponent,
+    CarouselComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

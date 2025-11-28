@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { MsPaginator } from 'maxi-angular-components';
 
 @Component({
@@ -6,6 +6,7 @@ import { MsPaginator } from 'maxi-angular-components';
   standalone: true,
   templateUrl: './paginator.component.html',
   styleUrls: ['./paginator.component.scss'],
+  encapsulation: ViewEncapsulation.None,
   imports: [MsPaginator]
 })
 export class PaginatorComponent {
