@@ -52,6 +52,7 @@ The project includes examples of the following components:
 - ⚙️ **Preload** - Content preloading
 - 💡 **Tooltip** - Contextual tooltips
 - 🔐 **InputOTP** - One-Time Password verification 
+- 🎠 **Carousel** - Interactive carousel for displaying multiple items with navigation
 
 ## 🚀 Getting Started
 
@@ -145,7 +146,7 @@ export class ExampleComponent {
 
 ### Main Dependencies
 - **@angular/core**: ^18.2.0
-- **maxi-angular-components**: ^5.0.1
+- **maxi-angular-components**: ^5.0.2
 - **rxjs**: ~7.8.0
 
 ### Dev Dependencies
