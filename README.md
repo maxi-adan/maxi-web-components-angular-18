@@ -32,15 +32,19 @@ The project includes examples of the following components:
 - 🎯 **Badge** - Status and notification badges
 - 🔤 **Input Field** - Text input components
 - 🔢 **Input Number** - Numeric input with controls
+- 🔢 **Control Number** - Numeric control input for managing numeric values
 - 🔄 **Input Switch** - Toggle switch components
 - 📊 **Table** - Data table with sorting and filtering
 - 🔔 **Notifications** - Toast and notification system
 - 💬 **Dialog** - Modal dialogs and popups
+- 📨 **Messages** - Contextual messages for displaying different types of feedback with multiple variants
 - 🎨 **Chips** - Tag and chip components
 - 📑 **Tabs** - Tabbed navigation
 - 📋 **Accordion** - Collapsible content sections
 - 🍔 **Cascade Menu** - Hierarchical dropdown menu
 - 📊 **Menubar** - Horizontal navigation menu with dropdowns
+- 🍞 **Breadcrumb** - Navigation breadcrumb trail showing current page location
+- 🪜 **Steps** - Step-by-step navigation component - Click on each step to navigate
 - ⏱️ **Timeline** - Timeline visualization
 - 📄 **Paginator** - Pagination controls
 - 🔍 **Autocomplete** - Search with suggestions
@@ -50,9 +54,11 @@ The project includes examples of the following components:
 - 💀 **Skeleton** - Loading placeholder
 - ⚡ **Spinner** - Loading indicators
 - ⚙️ **Preload** - Content preloading
+- 📊 **Progress Bar** - Progress indicator for showing completion status or loading state
 - 💡 **Tooltip** - Contextual tooltips
 - 🔐 **InputOTP** - One-Time Password verification 
 - 🎠 **Carousel** - Interactive carousel for displaying multiple items with navigation
+- 📦 **Fieldset** - Grouped form fields with collapsible legend for organizing related inputs
 
 ## 🚀 Getting Started
 
@@ -146,7 +152,7 @@ export class ExampleComponent {
 
 ### Main Dependencies
 - **@angular/core**: ^18.2.0
-- **maxi-angular-components**: ^5.0.2
+- **maxi-angular-components**: ^5.0.9
 - **rxjs**: ~7.8.0
 
 ### Dev Dependencies
