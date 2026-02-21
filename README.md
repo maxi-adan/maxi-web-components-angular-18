@@ -1,11 +1,12 @@
 <div align="center">
   <img src="./public/assets/logo.png" alt="Maxi Web Components Logo" width="400"/>
 
-  # Maxi Angular Components Test
+# Maxi Angular Components Test
 
-  ![Angular](https://img.shields.io/badge/Angular-18.2.0-red)
-  ![TypeScript](https://img.shields.io/badge/TypeScript-5.5.2-blue)
-  ![License](https://img.shields.io/badge/license-Private-lightgrey)
+![Angular](https://img.shields.io/badge/Angular-18.2.0-red)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5.2-blue)
+![License](https://img.shields.io/badge/license-Private-lightgrey)
+
 </div>
 
 ## 📖 Overview
@@ -56,9 +57,15 @@ The project includes examples of the following components:
 - ⚙️ **Preload** - Content preloading
 - 📊 **Progress Bar** - Progress indicator for showing completion status or loading state
 - 💡 **Tooltip** - Contextual tooltips
-- 🔐 **InputOTP** - One-Time Password verification 
 - 🎠 **Carousel** - Interactive carousel for displaying multiple items with navigation
 - 📦 **Fieldset** - Grouped form fields with collapsible legend for organizing related inputs
+- 📊 **Meter Group** - Visualize categorized data in a segmented bar
+- 🖼️ **Image** - Advanced image component with preview mode (light box)
+- 💬 **Popover** - Contextual popup triggered by click, hover, or focus
+- ✍️ **Text Editor** - Rich text editor with formatting toolbar
+- 🎛️ **Knob** - Circular dial control for selecting numeric values
+- 🔑 **Input Password** - Password input with strength indicator and mask toggling
+- 🔘 **Select Button** - Button-based selection component
 
 ## 🚀 Getting Started
 
@@ -71,34 +78,38 @@ The project includes examples of the following components:
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd maxi-angular-components-test
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm start
 ```
 
 4. Open your browser and navigate to:
+
 ```
 http://localhost:4200
 ```
 
 ## 🛠️ Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm start` | Start development server |
-| `npm run build` | Build for production |
-| `npm run watch` | Build in watch mode |
-| `npm test` | Run unit tests |
+| Script          | Description              |
+| --------------- | ------------------------ |
+| `npm start`     | Start development server |
+| `npm run build` | Build for production     |
+| `npm run watch` | Build in watch mode      |
+| `npm test`      | Run unit tests           |
 
 ## 🏗️ Project Structure
 
@@ -119,43 +130,123 @@ maxi-angular-components-test/
 ## 📚 Component Usage Example
 
 ```typescript
-import { Component } from '@angular/core';
-import { MsDropdown } from 'maxi-angular-components';
+import { Component } from "@angular/core";
+import { MsDropdown } from "maxi-angular-components";
 
 @Component({
-  selector: 'app-example',
+  selector: "app-example",
   standalone: true,
   imports: [MsDropdown],
-  template: `
-    <ms-dropdown
-      [options]="options"
-      [(value)]="selectedValue"
-      (onSelect)="handleSelection($event)">
-    </ms-dropdown>
-  `
+  template: ` <ms-dropdown [options]="options" [(value)]="selectedValue" (onSelect)="handleSelection($event)"> </ms-dropdown> `,
 })
 export class ExampleComponent {
   options = [
-    { label: 'Option 1', value: '1' },
-    { label: 'Option 2', value: '2' }
+    { label: "Option 1", value: "1" },
+    { label: "Option 2", value: "2" },
   ];
-  
+
   selectedValue = null;
-  
+
   handleSelection(event: any) {
-    console.log('Selected:', event.detail);
+    console.log("Selected:", event.detail);
   }
 }
 ```
 
-## 🔧 Dependencies
+## 📚 Detailed Component Documentation
+
+---
+
+### 📊 MsMeterGroup
+
+Component for visualizing categorized data in a segmented bar.
+
+#### Props
+
+- `values`: `MeterValue[]` - Array of objects with `label`, `value`, `color`, `icon`.
+- `orientation`: `'horizontal' | 'vertical'` (default: `'horizontal'`).
+
+---
+
+### 🖼️ MsImage
+
+Advanced image component with preview (light box) functionality.
+
+#### Props
+
+- `src`: `string` (required) - Image URL.
+- `alt`: `string` (required) - Alt text.
+- `preview`: `boolean` (default: `false`) - Enables light box.
+
+---
+
+### 💬 MsPopover
+
+Contextual popup component.
+
+#### Props
+
+- `trigger`: `'click' | 'hover' | 'focus'` (default: `'click'`).
+- `placement`: `'top' | 'bottom' | 'left' | 'right'` (default: `'bottom'`).
+
+---
+
+### ✍️ MsTextEditor
+
+Rich text editor with formatting toolbar.
+
+#### Props
+
+- `placeholder`: `string`.
+- `readonly`: `boolean` (default: `false`).
+
+#### Events
+
+- `textChange`: Emits the HTML string on content change.
+
+---
+
+### 🎛️ MsKnob
+
+Circular dial control for selecting numeric values.
+
+#### Props
+
+- `value`: `number`.
+- `min`: `number` (default: `0`).
+- `max`: `number` (default: `100`).
+
+---
+
+### 🔑 MsInputPassword
+
+Password input with strength meter.
+
+#### Props
+
+- `label`: `string`.
+- `feedback`: `boolean` (default: `false`) - Shows strength indicator.
+- `toggleMask`: `boolean` (default: `false`) - Shows eye icon.
+
+---
+
+### 🔘 MsSelectButton
+
+Button-based selection.
+
+#### Props
+
+- `options`: `string[] | Item[]`.
+- `multiple`: `boolean` (default: `false`).
 
 ### Main Dependencies
+
 - **@angular/core**: ^18.2.0
 - **maxi-angular-components**: ^5.0.9
 - **rxjs**: ~7.8.0
 
 ### Dev Dependencies
+
 - **@angular/cli**: ^18.2.10
 - **typescript**: ~5.5.2
 
@@ -172,4 +263,3 @@ This is a test project. For contributions to the main library, please refer to t
 <div align="center">
   Made with ❤️ using Angular and Maxi Angular Components
 </div>
-
