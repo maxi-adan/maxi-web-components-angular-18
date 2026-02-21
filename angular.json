@@ -29,7 +29,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss", "maxi-web-components/global.css"],
+            "styles": ["src/styles.scss", "maxi-web-components/global-zeclio.css"],
             "scripts": [],
             "baseHref": "./",
             "deployUrl": "./"
