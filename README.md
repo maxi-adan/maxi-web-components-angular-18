@@ -66,6 +66,8 @@ The project includes examples of the following components:
 - 🎛️ **Knob** - Circular dial control for selecting numeric values
 - 🔑 **Input Password** - Password input with strength indicator and mask toggling
 - 🔘 **Select Button** - Button-based selection component
+- 📊 **Chart** - Interactive charts (bar, line, pie, doughnut, radar, bubble, polar area, scatter, stacked, mixed) with animation support
+- 🔣 **Icon** - Scalable SVG icons with size and color customization
 
 ## 🚀 Getting Started
 
@@ -239,10 +241,43 @@ Button-based selection.
 - `options`: `string[] | Item[]`.
 - `multiple`: `boolean` (default: `false`).
 
+---
+
+### 📊 MsChart
+
+Interactive chart component powered by Chart.js.
+
+#### Props
+
+- `type`: `'bar' | 'line' | 'pie' | 'doughnut' | 'radar' | 'bubble' | 'polarArea' | 'scatter'` - Chart type.
+- `data`: `object` - Chart.js data object with `labels` and `datasets`.
+- `options`: `object` - Chart.js options object (supports animations, scales, plugins, etc.).
+- `variant`: `'primary' | 'secondary' | 'success' | 'warning' | 'info' | 'mixed'` - Color palette.
+- `height`: `string` (e.g. `'280px'`) - Chart height.
+- `width`: `string` - Chart width.
+
+#### Events
+
+- `chartReady`: Emits when the chart is initialized.
+- `chartClick`: Emits `ChartClickEvent` when a chart element is clicked.
+
+---
+
+### 🔣 MsIcon
+
+Scalable SVG icon component.
+
+#### Props
+
+- `name`: `string` - Icon identifier (e.g. `'home'`, `'search'`, `'bell'`).
+- `size`: `number` (default: `24`) - Icon size in pixels.
+- `color`: `string` - Icon color (CSS color value).
+- `customClass`: `string` - Additional CSS class.
+
 ### Main Dependencies
 
 - **@angular/core**: ^18.2.0
-- **maxi-angular-components**: ^6.0.0
+- **maxi-angular-components**: ^7.0.2
 - **rxjs**: ~7.8.0
 
 ### Dev Dependencies
